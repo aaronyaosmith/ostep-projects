@@ -1,3 +1,16 @@
+# ADDENDUM(ayaosmith)
+
+Building and running tests
+
+```sh
+lima nerdctl build -t ostep-projects .
+```
+
+```sh
+lima nerdctl run --rm -it ostep-projects
+cd xv6-public
+make qemu-nox
+```
 
 # Projects for an Operating Systems Class
 
