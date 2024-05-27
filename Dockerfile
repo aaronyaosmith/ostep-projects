@@ -15,6 +15,7 @@ RUN apt-get install -y \
                     expect
 
 ADD . /ostep-projects
+COPY ./xv6-public /ostep-projects/initial-xv6/src
 
 WORKDIR /ostep-projects
 
