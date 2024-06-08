@@ -3,12 +3,12 @@
 Building and running tests
 
 ```sh
-lima nerdctl build -t ostep-projects .
+./build-image.sh
 ```
 
 ```sh
-lima nerdctl run --rm -it ostep-projects
-cd xv6-public
+./run-container.sh
+cd initial-xv6/src
 make qemu-nox
 ```
 
