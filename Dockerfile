@@ -14,9 +14,7 @@ RUN apt-get install -y \
                     gawk \
                     expect
 
-ADD . /ostep-projects
-COPY ./xv6-public /ostep-projects/initial-xv6/src
-
+RUN mkdir /ostep-projects
 WORKDIR /ostep-projects
 
 ENV TOOLPREFIX=x86_64-linux-gnu-
